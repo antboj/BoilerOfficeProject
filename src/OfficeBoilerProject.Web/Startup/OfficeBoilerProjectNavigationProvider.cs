@@ -25,7 +25,14 @@ namespace OfficeBoilerProject.Web.Startup
                         url: "Home/About",
                         icon: "fa fa-info"
                         )
-                );
+                ).AddItem(
+                    new MenuItemDefinition(
+                        "Office",
+                        L("Office"),
+                        url: "Office/Office",
+                        icon: "fa fa-tasks"
+                        )
+                    );
         }
 
         private static ILocalizableString L(string name)
