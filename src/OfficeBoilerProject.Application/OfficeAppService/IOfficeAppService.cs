@@ -12,7 +12,10 @@ namespace OfficeBoilerProject.OfficeAppService
     {
         OfficeDto GetOffice(string name);
         ListResultDto<OfficeDto> Get();
-        OfficeDto GetById(int Id);
+        OfficeDto GetById(int id);
+        void Insert(OfficeDto input);
+        void Update(int id, OfficeDto input);
+        void Delete(int id);
 
     }
 }

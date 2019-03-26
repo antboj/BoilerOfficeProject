@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OfficeBoilerProject.EntityFrameworkCore;
 
 namespace OfficeBoilerProject.Migrations
 {
     [DbContext(typeof(OfficeBoilerProjectDbContext))]
-    partial class OfficeBoilerProjectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190326182111_Usage")]
+    partial class Usage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -68,29 +70,6 @@ namespace OfficeBoilerProject.Migrations
                     b.ToTable("Persons");
                 });
 
-            modelBuilder.Entity("OfficeBoilerProject.Models.Usage", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("DeviceId");
-
-                    b.Property<int>("PersonId");
-
-                    b.Property<DateTime>("UsedFrom");
-
-                    b.Property<DateTime?>("UsedTo");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DeviceId");
-
-                    b.HasIndex("PersonId");
-
-                    b.ToTable("Usages");
-                });
-
             modelBuilder.Entity("OfficeBoilerProject.Models.Device", b =>
                 {
                     b.HasOne("OfficeBoilerProject.Models.Person", "Person")
@@ -103,19 +82,6 @@ namespace OfficeBoilerProject.Migrations
                     b.HasOne("OfficeBoilerProject.Models.Office", "Office")
                         .WithMany("Persons")
                         .HasForeignKey("OfficeId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("OfficeBoilerProject.Models.Usage", b =>
-                {
-                    b.HasOne("OfficeBoilerProject.Models.Device", "Device")
-                        .WithMany()
-                        .HasForeignKey("DeviceId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("OfficeBoilerProject.Models.Person", "Person")
-                        .WithMany()
-                        .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

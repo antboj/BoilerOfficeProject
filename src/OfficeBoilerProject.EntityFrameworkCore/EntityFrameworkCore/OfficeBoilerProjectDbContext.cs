@@ -10,6 +10,7 @@ namespace OfficeBoilerProject.EntityFrameworkCore
         public DbSet<Office> Offices { get; set; }
         public DbSet<Person> Persons { get; set; }
         public DbSet<Device> Devices { get; set; }
+        public DbSet<Usage> Usages { get; set; }
 
         public OfficeBoilerProjectDbContext(DbContextOptions<OfficeBoilerProjectDbContext> options) 
             : base(options)

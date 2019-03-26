@@ -24,7 +24,7 @@ namespace OfficeBoilerProject.OfficeAppService
 
         public OfficeDto GetOffice(string name)
         {
-            var office = _officeRepository.GetAll().Where(o => o.Description == name).Include(p => p.Persons);
+            var office = _officeRepository.GetAll().Where(o => o.Description == name);
             if (!office.Any())
             {
                 throw new Exception("Not Found");
@@ -39,9 +39,9 @@ namespace OfficeBoilerProject.OfficeAppService
             return new ListResultDto<OfficeDto>(ObjectMapper.Map<List<OfficeDto>>(office));
         }
 
-        public OfficeDto GetById(int Id)
+        public OfficeDto GetById(int id)
         {
-            var office = _officeRepository.Get(Id);
+            var office = _officeRepository.Get(id);
             return ObjectMapper.Map<OfficeDto>(office);
         }
 
