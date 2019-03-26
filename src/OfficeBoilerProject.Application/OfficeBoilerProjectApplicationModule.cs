@@ -12,6 +12,7 @@ namespace OfficeBoilerProject
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(OfficeBoilerProjectApplicationModule).GetAssembly());
+            //iuioui
         }
     }
 }
