@@ -29,7 +29,14 @@ namespace OfficeBoilerProject.Web.Startup
                     new MenuItemDefinition(
                         "Office",
                         L("Office"),
-                        url: "Office/Office",
+                        url: "Office",
+                        icon: "fa fa-tasks"
+                        )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        "Person",
+                        L("Person"),
+                        url: "Person",
                         icon: "fa fa-tasks"
                         )
                     );

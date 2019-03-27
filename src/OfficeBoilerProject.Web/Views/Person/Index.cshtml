@@ -1,0 +1,11 @@
+﻿@model OfficeBoilerProject.PersonAppService.Dto.PersonViewModel
+
+@{
+    ViewBag.Title = "Person";
+    ViewBag.ActiveMenu = "Person";
+}
+
+@foreach (var person in Model.Persons)
+{
+    <h2>@person.FirstName @person.LastName</h2>
+}

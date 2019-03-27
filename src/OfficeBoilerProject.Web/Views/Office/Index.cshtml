@@ -1,0 +1,11 @@
+﻿@model OfficeBoilerProject.Web.Views.OfficeViewModel
+
+@{
+    ViewBag.Title = "Office";
+    ViewBag.ActiveMenu = "Office";
+}
+
+    @foreach (var off in Model.Offices)
+    {
+        <h2>@off.Description</h2>
+    }

@@ -10,9 +10,10 @@ namespace OfficeBoilerProject.OfficeAppService
 {
     public interface IOfficeAppService : IApplicationService
     {
-        OfficeDto GetOffice(string name);
+        
         ListResultDto<OfficeDto> Get();
         OfficeDto GetById(int id);
+        ListResultDto<OfficeDto> GetOffice();
         void Insert(OfficeDto input);
         void Update(int id, OfficeDto input);
         void Delete(int id);
