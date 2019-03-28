@@ -39,5 +39,17 @@ namespace OfficeBoilerProject.Web.Controllers
             var model = new OfficeViewModel(output.Items);
             return View(model);
         }
+
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Add(OfficeDto input)
+        {
+            _officeAppService.Insert(input);
+            return RedirectToAction("Index");
+        }
     }
 }

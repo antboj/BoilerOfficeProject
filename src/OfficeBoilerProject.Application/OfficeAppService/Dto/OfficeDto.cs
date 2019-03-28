@@ -11,5 +11,7 @@ namespace OfficeBoilerProject.OfficeAppService.Dto
     public class OfficeDto : EntityDto
     {
         public string Description { get; set; }
+        public IList<Person> Persons { get; set; } = new List<Person>();
+
     }
 }

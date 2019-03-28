@@ -5,6 +5,7 @@ using System.Text;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
+using Abp.UI;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using OfficeBoilerProject.Models;
@@ -47,7 +48,7 @@ namespace OfficeBoilerProject.OfficeAppService
             }
             catch (Exception)
             {
-                throw new Exception("ID Not Found");
+                throw new UserFriendlyException("ID Not Found");
             }
             return ObjectMapper.Map<OfficeDto>(office);
         }
