@@ -3,6 +3,21 @@
     ViewData["Title"] = "Person";
 }
 
-<h2>Name: @Model.FirstName @Model.LastName</h2>
-<h3>Id: @Model.Id</h3>
+<h2>Find Person</h2>
+<hr />
+
+@if (Model == null)
+{
+    <form action="" method="get">
+        <div class="form-group">
+            <input type="text" name="id" placeholder="Id" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary" >@("Find")</button>
+    </form>
+}
+else
+{
+    <h2>Name: @Model.FirstName @Model.LastName</h2>
+    <h3>Id: @Model.Id</h3>
+}
 

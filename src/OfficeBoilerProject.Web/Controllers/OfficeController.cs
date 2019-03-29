@@ -23,21 +23,24 @@ namespace OfficeBoilerProject.Web.Controllers
         public IActionResult Index()
         {
             var output = _officeAppService.Get();
-            var model = new OfficeViewModel(output.Items);
+            var model = new OfficeDtoGetAll(output.Items);
             return View(model);
         }
-
-        public IActionResult Office(int id)
+        [HttpGet]
+        public IActionResult Office(int? id)
         {
-            var output = _officeAppService.GetById(id);
+            OfficeDto output = null;
+            if (id.HasValue)
+            {
+                output = _officeAppService.GetById(id.Value);
+            }
             return View(output);
         }
 
         public IActionResult Name(string name)
         {
-            var output = _officeAppService.GetOffice();
-            var model = new OfficeViewModel(output.Items);
-            return View(model);
+            var output = _officeAppService.GetOffice(name);
+            return View(output);
         }
 
         public IActionResult Add()
@@ -49,6 +52,30 @@ namespace OfficeBoilerProject.Web.Controllers
         public IActionResult Add(OfficeDto input)
         {
             _officeAppService.Insert(input);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            _officeAppService.Delete(id);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Update()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id, OfficeDtoPut input)
+        {
+            _officeAppService.Update(id, input);
             return RedirectToAction("Index");
         }
     }

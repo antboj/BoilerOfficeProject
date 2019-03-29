@@ -7,7 +7,7 @@ using OfficeBoilerProject.Models;
 
 namespace OfficeBoilerProject.OfficeAppService.Dto
 {
-    [AutoMapFrom(typeof(Office))]
+    [AutoMap(typeof(Office))]
     public class OfficeDto : EntityDto
     {
         public string Description { get; set; }

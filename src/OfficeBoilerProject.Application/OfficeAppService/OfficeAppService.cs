@@ -23,19 +23,19 @@ namespace OfficeBoilerProject.OfficeAppService
         }
 
 
-        public ListResultDto<OfficeDto> GetOffice()
+        public OfficeDto GetOffice(string name)
         {
-            var office = _officeRepository.GetAll().Include(p => p.Persons);
+            var office = _officeRepository.GetAll().Where(x => x.Description == name);
             if (office == null)
             {
                 throw new Exception("Office Not Found");
             }
-            return new ListResultDto<OfficeDto>(ObjectMapper.Map<List<OfficeDto>>(office));
+            return ObjectMapper.Map<OfficeDto>(office);
         }
 
         public ListResultDto<OfficeDto> Get()
         {
-            var office = _officeRepository.GetAll();
+            var office = _officeRepository.GetAll().Include(p => p.Persons);
             return new ListResultDto<OfficeDto>(ObjectMapper.Map<List<OfficeDto>>(office));
         }
 
@@ -59,7 +59,7 @@ namespace OfficeBoilerProject.OfficeAppService
             _officeRepository.Insert(office);
         }
 
-        public void Update(int id, OfficeDto input)
+        public void Update(int id, OfficeDtoPut input)
         {
             _officeRepository.Update(id, ent =>
             {

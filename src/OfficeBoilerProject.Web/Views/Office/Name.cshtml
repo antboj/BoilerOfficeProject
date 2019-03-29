@@ -1,11 +1,9 @@
-﻿@model OfficeBoilerProject.Web.Views.OfficeViewModel
+﻿@model OfficeBoilerProject.OfficeAppService.Dto.OfficeDto
 @{
     ViewData["Title"] = "GetOffice";
     ViewBag.ActiveMenu = "Office";
 }
 
-@foreach (var office in Model.Offices)
-{
-    <p>@office.Description</p>
-}
+    <p>@Model.Description</p>
+
 

@@ -1,11 +1,18 @@
-﻿@model OfficeBoilerProject.Web.Views.OfficeViewModel
+﻿@model OfficeBoilerProject.Web.Views.OfficeDtoGetAll
 
 @{
     ViewBag.Title = "Office";
     ViewBag.ActiveMenu = "Office";
 }
 
-    @foreach (var off in Model.Offices)
+<h2>All Offices</h2>
+<hr/>
+
+@foreach (var off in Model.Offices)
     {
-        <h2>@off.Description</h2>
+        <h4>@off.Description</h4>
+        foreach (var per in off.Persons)
+         {
+             <p>@per.FirstName</p>
+         }
     }

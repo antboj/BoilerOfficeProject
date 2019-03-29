@@ -1,11 +1,14 @@
-﻿@model OfficeBoilerProject.PersonAppService.Dto.PersonViewModel
+﻿@model OfficeBoilerProject.PersonAppService.Dto.PersonDtoGetAll
 
 @{
     ViewBag.Title = "Person";
     ViewBag.ActiveMenu = "Person";
 }
 
+<h2>All Persons</h2>
+<hr />
+
 @foreach (var person in Model.Persons)
 {
-    <h2>@person.FirstName @person.LastName</h2>
+    <h4>@person.FirstName @person.LastName</h4>
 }

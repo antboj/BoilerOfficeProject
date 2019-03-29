@@ -41,13 +41,13 @@ namespace OfficeBoilerProject.PersonAppService
             return ObjectMapper.Map<PersonDto>(person);
         }
 
-        public void Insert(PersonDto input)
+        public void Insert(PersonDtoPost input)
         {
             var office = ObjectMapper.Map<Person>(input);
             _personRepository.Insert(office);
         }
 
-        public void Update(int id, PersonDto input)
+        public void Update(int id, PersonDtoPut input)
         {
             _personRepository.Update(id, ent =>
             {

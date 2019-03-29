@@ -23,14 +23,54 @@ namespace OfficeBoilerProject.Web.Controllers
         public IActionResult Index()
         {
             var output = _personAppService.Get();
-            var model = new PersonViewModel(output.Items);
+            var model = new PersonDtoGetAll(output.Items);
             return View(model);
         }
 
-        public IActionResult Person(int id)
+        public IActionResult Person(int? id)
         {
-            var output = _personAppService.GetById(id);
+            PersonDto output = null;
+            if (id.HasValue)
+            {
+                output = _personAppService.GetById(id.Value);
+            }
             return View(output);
+        }
+
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Add(PersonDtoPost input)
+        {
+            _personAppService.Insert(input);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            _personAppService.Delete(id);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Update()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id, PersonDtoPut input)
+        {
+            _personAppService.Update(id, input);
+            return RedirectToAction("Index");
         }
     }
 }

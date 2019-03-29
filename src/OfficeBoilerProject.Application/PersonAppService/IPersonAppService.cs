@@ -11,8 +11,8 @@ namespace OfficeBoilerProject.PersonAppService
     {
         ListResultDto<PersonDto> Get();
         PersonDto GetById(int id);
-        void Insert(PersonDto input);
-        void Update(int id, PersonDto input);
+        void Insert(PersonDtoPost input);
+        void Update(int id, PersonDtoPut input);
         void Delete(int id);
     }
 }

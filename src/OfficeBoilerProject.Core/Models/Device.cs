@@ -14,5 +14,6 @@ namespace OfficeBoilerProject.Models
         public int? PersonId { get; set; }
         [ForeignKey("PersonId")]
         public Person Person { get; set; }
+
     }
 }

@@ -4,5 +4,20 @@
     ViewBag.ActiveMenu = "Office";
 }
 
-<h2>Name: @Model.Description <br />Id: @Model.Id</h2>
+<h2>Find office</h2>
+<hr/>
 
+@if (Model == null)
+{
+<form action="" method="get">
+    <div class="form-group">
+        <input type="text" name="id" placeholder="Id" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary" >@("Find")</button>
+</form>
+}
+else
+{
+    @*@Html.TextBoxFor(x => x.Description);*@
+    <h2>Name: @Model.Description <br />Id: @Model.Id</h2>
+}
