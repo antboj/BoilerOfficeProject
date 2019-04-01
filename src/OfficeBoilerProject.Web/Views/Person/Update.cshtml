@@ -6,10 +6,8 @@
 <h2>Update Person</h2>
 <hr />
 
-
 <form method="post">
     <div class="form-group">
-        @*<input type="number" name="Id" class="form-control" value="@Url.ActionContext.RouteData.Values["id"]" />*@
         FirstName: <input type="text" name="FirstName" class="form-control" value="@Model.FirstName" />
         Lastname: <input type="text" name="LastName" class="form-control" value = "@Model.LastName" />
         Office: <input type="number" name="OfficeId" class="form-control" value = "@Model.OfficeId"/>

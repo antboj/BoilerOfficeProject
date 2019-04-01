@@ -11,10 +11,6 @@
 @foreach (var off in Model.Offices)
     {
         <h4>@off.Description</h4>
-        @*foreach (var per in off.Persons)
-         {
-             <p>@per.FirstName</p>
-         }*@
         @Html.ActionLink("Details", "Office", new { id = off.Id })
         @Html.ActionLink("Update", "Update", new {id = off.Id})
         @Html.ActionLink("Delete", "Delete", new { id = off.Id })

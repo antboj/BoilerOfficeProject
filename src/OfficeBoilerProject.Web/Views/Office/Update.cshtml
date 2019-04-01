@@ -7,10 +7,8 @@
 <h2>Update Office</h2>
 <hr />
 
-
 <form method="post">
     <div class="form-group">
-        @*<input type="number" name="Id" class="form-control" value="@Url.ActionContext.RouteData.Values["id"]"/>*@
         Name: <input type="text" name="Description" class="form-control" value="@Model.Description"/>
     </div>
     <button type="submit" class="btn btn-primary">@("Update")</button>
