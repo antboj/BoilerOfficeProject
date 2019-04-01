@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using OfficeBoilerProject.Models;
 using OfficeBoilerProject.PersonAppService;
 using OfficeBoilerProject.PersonAppService.Dto;
 
@@ -49,21 +50,33 @@ namespace OfficeBoilerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Delete()
+        public IActionResult Delete(int? id)
         {
-            return View();
+            PersonDto output = null;
+            if (id.HasValue)
+            {
+                output = _personAppService.GetById(id.Value);
+            }
+            return View(output);
         }
 
-        [HttpPost]
-        public IActionResult Delete(int id)
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
         {
             _personAppService.Delete(id);
             return RedirectToAction("Index");
         }
 
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
-            return View();
+            var person = _personAppService.GetPerson(id);
+            PersonDtoPut newPerson = new PersonDtoPut
+            {
+                FirstName = person.FirstName,
+                LastName = person.LastName,
+                OfficeId = person.OfficeId
+            };
+            return View(newPerson);
         }
 
         [HttpPost]

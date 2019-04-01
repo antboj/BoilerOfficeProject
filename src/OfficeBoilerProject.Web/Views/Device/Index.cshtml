@@ -1,0 +1,15 @@
+﻿@model OfficeBoilerProject.DeviceAppService.Dto.DeviceDtoGetAll
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>All Devices</h2>
+<hr />
+
+@foreach (var device in Model.Devices)
+{
+    <h4>@device.Name</h4>
+    @Html.ActionLink("Details", "Device", new { id = device.Id })
+    @Html.ActionLink("Update", "Update", new { id = device.Id })
+    @Html.ActionLink("Delete", "Delete", new { id = device.Id })
+}

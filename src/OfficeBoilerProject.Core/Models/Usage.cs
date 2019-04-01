@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using Abp.Domain.Entities;
 
 namespace OfficeBoilerProject.Models
 {
     [Table("Usages")]
-    public class Usage
+    public class Usage : Entity
     {
         public int Id { get; set; }
 
@@ -20,5 +21,7 @@ namespace OfficeBoilerProject.Models
 
         public DateTime UsedFrom { get; set; }
         public DateTime? UsedTo { get; set; }
+
+
     }
 }

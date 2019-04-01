@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
+using Abp.UI;
 using OfficeBoilerProject.Models;
 using OfficeBoilerProject.PersonAppService.Dto;
 
@@ -39,6 +40,17 @@ namespace OfficeBoilerProject.PersonAppService
                 throw new Exception("ID Not Found");
             }
             return ObjectMapper.Map<PersonDto>(person);
+        }
+
+        public Person GetPerson(int id)
+        {
+            var person = _personRepository.FirstOrDefault(x => x.Id == id);
+
+            if (person == null)
+            {
+                throw new Exception("ID Not Found");
+            }
+            return person;
         }
 
         public void Insert(PersonDtoPost input)

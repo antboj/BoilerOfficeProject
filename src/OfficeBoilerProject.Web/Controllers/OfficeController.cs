@@ -32,18 +32,12 @@ namespace OfficeBoilerProject.Web.Controllers
             OfficeDto output = null;
             if (id.HasValue)
             {
-                output = _officeAppService.GetById(id.Value);
+                output = _officeAppService.GetOffice(id.Value);
             }
             return View(output);
         }
 
-        public IActionResult Name(string name)
-        {
-            var output = _officeAppService.GetOffice(name);
-            return View(output);
-        }
-
-        public IActionResult Add()
+       public IActionResult Add()
         {
             return View();
         }
@@ -55,21 +49,31 @@ namespace OfficeBoilerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Delete()
+        public IActionResult Delete(int? id)
         {
-            return View();
+            OfficeDto output = null;
+            if (id.HasValue)
+            {
+                output = _officeAppService.GetById(id.Value);
+            }
+            return View(output);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         public IActionResult Delete(int id)
         {
             _officeAppService.Delete(id);
             return RedirectToAction("Index");
         }
 
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
-            return View();
+            var office = _officeAppService.GetOffice(id);
+            OfficeDtoPut newOffice = new OfficeDtoPut
+            {
+                Description = office.Description
+            };
+            return View(newOffice);
         }
 
         [HttpPost]

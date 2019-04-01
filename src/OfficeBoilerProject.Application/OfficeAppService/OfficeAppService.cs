@@ -23,19 +23,21 @@ namespace OfficeBoilerProject.OfficeAppService
         }
 
 
-        public OfficeDto GetOffice(string name)
+        public OfficeDto GetOffice(int id)
         {
-            var office = _officeRepository.GetAll().Where(x => x.Description == name);
+            var all = _officeRepository.GetAll().Include(p => p.Persons);
+            var office = all.FirstOrDefault(x => x.Id == id);
             if (office == null)
             {
                 throw new Exception("Office Not Found");
             }
+
             return ObjectMapper.Map<OfficeDto>(office);
         }
 
         public ListResultDto<OfficeDto> Get()
         {
-            var office = _officeRepository.GetAll().Include(p => p.Persons);
+            var office = _officeRepository.GetAll();
             return new ListResultDto<OfficeDto>(ObjectMapper.Map<List<OfficeDto>>(office));
         }
 
