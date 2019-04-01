@@ -1,23 +1,19 @@
-﻿@model OfficeBoilerProject.OfficeAppService.Dto.OfficeDto
+﻿
+@model OfficeBoilerProject.OfficeAppService.Dto.OfficeDto
 @{
     ViewBag.Title = "Office";
     ViewBag.ActiveMenu = "Office";
 }
 
-<h2>Find office</h2>
+<h2>Office Details</h2>
 <hr/>
 
-@if (Model == null)
-{
-<form action="" method="get">
-    <div class="form-group">
-        <input type="text" name="id" placeholder="Id" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary" >@("Find")</button>
-</form>
-}
-else
-{
-    @*@Html.TextBoxFor(x => x.Description);*@
-    <h2>Name: @Model.Description <br />Id: @Model.Id</h2>
-}
+<h2>Name: @Model.Description </h2>
+<br />
+<h2>Persons: </h2>
+<ul>
+    @foreach (var person in Model.Persons)
+    {
+    <li><h3>@person.FirstName @person.LastName</h3></li>
+    }
+</ul>

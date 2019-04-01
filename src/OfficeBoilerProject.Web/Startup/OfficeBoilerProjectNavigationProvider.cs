@@ -34,28 +34,13 @@ namespace OfficeBoilerProject.Web.Startup
                         )
                         .AddItem(new MenuItemDefinition(
                             "Office",
-                            L("Add Office"),
+                            L("Add New Office"),
                             url: "Office/Add",
                             icon: "fa fa-tasks"))
                         .AddItem(new MenuItemDefinition(
                             "Office",
                             L("All Offices"),
                             url: "Office",
-                            icon: "fa fa-tasks"))
-                        .AddItem(new MenuItemDefinition(
-                            "Office",
-                            L("Delete Office"),
-                            url: "Office/Delete",
-                            icon: "fa fa-tasks"))
-                        .AddItem(new MenuItemDefinition(
-                            "Office",
-                            L("Find Office"),
-                            url: "Office/Office",
-                            icon: "fa fa-tasks"))
-                        .AddItem(new MenuItemDefinition(
-                            "Office",
-                            L("Update Office"),
-                            url: "Office/Update",
                             icon: "fa fa-tasks"))
                 ).AddItem(
                     new MenuItemDefinition(
@@ -66,11 +51,6 @@ namespace OfficeBoilerProject.Web.Startup
                         )
                         .AddItem(new MenuItemDefinition(
                             "Person",
-                            L("Find Person"),
-                            url: "Person/Person",
-                            icon: "fa fa-tasks"))
-                        .AddItem(new MenuItemDefinition(
-                            "Person",
                             L("Add New Person"),
                             url: "Person/Add",
                             icon: "fa fa-tasks"))
@@ -79,16 +59,6 @@ namespace OfficeBoilerProject.Web.Startup
                             L("All Persons"),
                             url: "Person",
                             icon: "fa fa-tasks"))
-                        .AddItem(new MenuItemDefinition(
-                            "Person",
-                            L("Delete Person"),
-                            url: "Person/Delete",
-                            icon: "fa fa-tasks"))
-                        .AddItem(new MenuItemDefinition(
-                            "Person",
-                            L("Update Person"),
-                            url: "Person/Update",
-                            icon: "fa fa-tasks"))
                     ).AddItem(
                     new MenuItemDefinition(
                         "Device",
@@ -96,6 +66,16 @@ namespace OfficeBoilerProject.Web.Startup
                         url: "Device",
                         icon: "fa fa-tasks"
                     )
+                        .AddItem(new MenuItemDefinition(
+                            "Device",
+                            L("Add New Device"),
+                            url: "Device/Add",
+                            icon: "fa fa-tasks"))
+                        .AddItem(new MenuItemDefinition(
+                            "Person",
+                            L("All Devices"),
+                            url: "Device",
+                            icon: "fa fa-tasks"))
                     );
         }
 

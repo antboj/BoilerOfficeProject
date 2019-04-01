@@ -11,4 +11,7 @@
 @foreach (var person in Model.Persons)
 {
     <h4>@person.FirstName @person.LastName</h4>
+    @Html.ActionLink("Details", "Person", new { id = person.Id })
+    @Html.ActionLink("Update", "Update", new {id = person.Id})
+    @Html.ActionLink("Delete", "Delete", new { id = person.Id })
 }

@@ -10,5 +10,7 @@ namespace OfficeBoilerProject.DeviceAppService.Dto
     [AutoMap(typeof(Device))]
     public class DeviceDtoPut : EntityDto
     {
+        public string Name { get; set; }
+        public int PersonId { get; set; }
     }
 }

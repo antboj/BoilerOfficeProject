@@ -1,0 +1,17 @@
+﻿@model OfficeBoilerProject.DeviceAppService.Dto.DeviceDtoPost
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h2>Add New Device</h2>
+
+<hr />
+
+<form method="post">
+    <div class="form-group">
+        <input type="text" name="Name" placeholder="Name" class="form-control" />
+        <input type="text" name="PersonId" placeholder="PersonId" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">@("Add")</button>
+</form>
+

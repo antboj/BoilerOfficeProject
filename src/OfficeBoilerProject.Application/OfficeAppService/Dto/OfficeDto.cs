@@ -4,6 +4,7 @@ using System.Text;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using OfficeBoilerProject.Models;
+using OfficeBoilerProject.PersonAppService.Dto;
 
 namespace OfficeBoilerProject.OfficeAppService.Dto
 {
@@ -11,7 +12,7 @@ namespace OfficeBoilerProject.OfficeAppService.Dto
     public class OfficeDto : EntityDto
     {
         public string Description { get; set; }
-        public IList<Person> Persons { get; set; } = new List<Person>();
+        public List<PersonDto> Persons { get; set; } = new List<PersonDto>();
 
     }
 }

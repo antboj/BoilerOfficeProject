@@ -4,14 +4,14 @@
     ViewData["Title"] = "Add";
 }
 
-<h2>Add New Office</h2>
+<h2>Update Office</h2>
 <hr />
 
 
 <form method="post">
     <div class="form-group">
-        <input type="number" name="Id" placeholder="Id" class="form-control" />
-        <input type="text" name="Description" placeholder="Name" class="form-control" />
+        @*<input type="number" name="Id" class="form-control" value="@Url.ActionContext.RouteData.Values["id"]"/>*@
+        Name: <input type="text" name="Description" class="form-control" value="@Model.Description"/>
     </div>
-    <button type="submit" class="btn btn-primary">@("Add")</button>
+    <button type="submit" class="btn btn-primary">@("Update")</button>
 </form>
