@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using OfficeBoilerProject.OfficeAppService.Dto;
+﻿using System.Collections.Generic;
 
-namespace OfficeBoilerProject.Web.Views
+namespace OfficeBoilerProject.OfficeAppService.Dto
 {
     public class OfficeDtoGetAll
     {

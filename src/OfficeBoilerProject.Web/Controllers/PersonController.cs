@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using OfficeBoilerProject.Models;
+using OfficeBoilerProject.OfficeAppService;
 using OfficeBoilerProject.PersonAppService;
 using OfficeBoilerProject.PersonAppService.Dto;
+using OfficeBoilerProject.Web.Dto;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,17 +17,19 @@ namespace OfficeBoilerProject.Web.Controllers
     public class PersonController : OfficeBoilerProjectControllerBase
     {
         private readonly IPersonAppService _personAppService;
+        private readonly IOfficeAppService _officeAppService;
 
-        public PersonController(IPersonAppService personAppService)
+        public PersonController(IPersonAppService personAppService, IOfficeAppService officeAppService)
         {
             _personAppService = personAppService;
+            _officeAppService = officeAppService;
         }
 
         //GET: /<controller>/
         public IActionResult Index()
         {
             var output = _personAppService.Get();
-            var model = new PersonDtoGetAll(output.Items);
+            var model = new PersonDtoGetAll(output);
             return View(model);
         }
 
@@ -40,6 +45,8 @@ namespace OfficeBoilerProject.Web.Controllers
 
         public IActionResult Add()
         {
+            var offices = SelectOffice();
+            ViewData["OfficeList"] = offices;
             return View();
         }
 
@@ -76,6 +83,8 @@ namespace OfficeBoilerProject.Web.Controllers
                 LastName = person.LastName,
                 OfficeId = person.OfficeId
             };
+            var offices = SelectOffice();
+            ViewData["OfficeList"] = offices;
             return View(newPerson);
         }
 
@@ -84,6 +93,17 @@ namespace OfficeBoilerProject.Web.Controllers
         {
             _personAppService.Update(id, input);
             return RedirectToAction("Index");
+        }
+
+        public SelectList SelectOffice()
+        {
+            var office = new OfficeSelectListDto(_officeAppService);
+
+            var offices = office.Offices.ToList();
+
+            SelectList selectOffices = new SelectList(offices, "Id", "Description");
+
+            return selectOffices;
         }
     }
 }

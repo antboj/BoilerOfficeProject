@@ -1,4 +1,4 @@
-﻿@model OfficeBoilerProject.Models.Device
+﻿@model OfficeBoilerProject.DeviceAppService.DeviceDto
 @{
     ViewData["Title"] = "Device";
 }
@@ -6,6 +6,6 @@
 <h2>Device Details</h2>
 <hr />
 <h2>Name: @Model.Name</h2>
-<h2>Using: @Model.Person.FirstName @Model.Person.LastName</h2>
-@Html.ActionLink("History", "Device", new { id = Model.Id })
+@*<h2>Using: @Model.Person.FirstName @Model.Person.LastName</h2>*@
+@Html.ActionLink("History", "History", "Device", new{Id = Model.Id})
 

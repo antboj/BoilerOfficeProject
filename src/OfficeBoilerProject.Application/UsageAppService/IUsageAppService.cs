@@ -10,7 +10,7 @@ namespace OfficeBoilerProject.UsageAppService
     public interface IUsageAppService : IApplicationService
     {
         void AddUsage(int dId, int pId);
-        IQueryable<Usage> AllByDevice(int id);
+        List<Usage> AllByDevice(int id);
         void EndUsing(int id);
     }
 }

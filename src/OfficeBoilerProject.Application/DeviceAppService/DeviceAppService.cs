@@ -19,10 +19,10 @@ namespace OfficeBoilerProject.DeviceAppService
             _deviceRepository = deviceRepository;
         }
 
-        public ListResultDto<DeviceDto> Get()
+        public List<DeviceDto> Get()
         {
             var allDevices = _deviceRepository.GetAll();
-            return new ListResultDto<DeviceDto>(ObjectMapper.Map<List<DeviceDto>>(allDevices));
+            return new List<DeviceDto>(ObjectMapper.Map<List<DeviceDto>>(allDevices));
         }
 
         public DeviceDto GetById(int id)
@@ -61,7 +61,7 @@ namespace OfficeBoilerProject.DeviceAppService
 
         public Device GetDevice(int id)
         {
-            var all = _deviceRepository.GetAll().Include(p => p.Person);
+            var all = _deviceRepository.GetAll();
             var device = all.FirstOrDefault(x => x.Id == id);
 
             if (device == null)

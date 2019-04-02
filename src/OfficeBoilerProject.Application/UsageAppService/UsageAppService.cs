@@ -29,9 +29,11 @@ namespace OfficeBoilerProject.UsageAppService
             _usageRepository.Insert(usage);
         }
 
-        public IQueryable<Usage> AllByDevice(int id)
+        public List<Usage> AllByDevice(int id)
         {
-            return _usageRepository.GetAll().Where(x => x.DeviceId == id).Include(p => p.Person).Include(d => d.Device);
+            var all =  _usageRepository.GetAll().Include(p => p.Person).Include(d => d.Device);
+            var found = all.Where(x => x.DeviceId == id).ToList();
+            return found;
         }
 
         public void EndUsing(int id)

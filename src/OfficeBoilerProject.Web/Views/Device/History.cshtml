@@ -1,0 +1,12 @@
+﻿@model OfficeBoilerProject.UsageAppService.Dto.UsageByDeviceDtoGet
+@{
+    ViewData["Title"] = "History";
+    //var usages = ViewBag.UsageList;
+}
+
+<h2>History</h2>
+
+@foreach (var u in Model.Usages)
+{
+    <p>Name: @u.Person</p>
+}

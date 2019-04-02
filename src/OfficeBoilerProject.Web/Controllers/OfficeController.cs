@@ -23,13 +23,13 @@ namespace OfficeBoilerProject.Web.Controllers
         public IActionResult Index()
         {
             var output = _officeAppService.Get();
-            var model = new OfficeDtoGetAll(output.Items);
+            var model = new OfficeDtoGetAll(output);
             return View(model);
         }
         [HttpGet]
         public IActionResult Office(int? id)
         {
-            OfficeDto output = null;
+            OfficeDtoGet output = null;
             if (id.HasValue)
             {
                 output = _officeAppService.GetOffice(id.Value);

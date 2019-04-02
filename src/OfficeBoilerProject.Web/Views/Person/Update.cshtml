@@ -1,6 +1,7 @@
 ﻿@model OfficeBoilerProject.PersonAppService.Dto.PersonDtoPut
 @{
     ViewData["Title"] = "Update";
+    var officeList = ViewBag.OfficeList as SelectList;
 }
 
 <h2>Update Person</h2>
@@ -10,7 +11,7 @@
     <div class="form-group">
         FirstName: <input type="text" name="FirstName" class="form-control" value="@Model.FirstName" />
         Lastname: <input type="text" name="LastName" class="form-control" value = "@Model.LastName" />
-        Office: <input type="number" name="OfficeId" class="form-control" value = "@Model.OfficeId"/>
+        @Html.DropDownListFor(x => x.OfficeId, officeList)
     </div>
     <button type="submit" class="btn btn-primary">@("Update")</button>
 </form>

@@ -1,6 +1,7 @@
 ﻿@model OfficeBoilerProject.DeviceAppService.Dto.DeviceDtoPost
 @{
     ViewData["Title"] = "Add";
+    var persons = ViewBag.SelectPerson as SelectList;
 }
 
 <h2>Add New Device</h2>
@@ -10,7 +11,7 @@
 <form method="post">
     <div class="form-group">
         <input type="text" name="Name" placeholder="Name" class="form-control" />
-        <input type="text" name="PersonId" placeholder="PersonId" class="form-control" />
+        @Html.DropDownListFor(x => x.PersonId, persons, "Select Person")
     </div>
     <button type="submit" class="btn btn-primary">@("Add")</button>
 </form>

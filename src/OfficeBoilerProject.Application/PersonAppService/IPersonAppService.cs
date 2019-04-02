@@ -10,7 +10,7 @@ namespace OfficeBoilerProject.PersonAppService
 {
     public interface IPersonAppService : IApplicationService
     {
-        ListResultDto<PersonDto> Get();
+        List<PersonDto> Get();
         PersonDto GetById(int id);
         Person GetPerson(int id);
         void Insert(PersonDtoPost input);

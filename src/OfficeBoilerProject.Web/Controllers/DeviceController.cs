@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using OfficeBoilerProject.DeviceAppService;
 using OfficeBoilerProject.DeviceAppService.Dto;
 using OfficeBoilerProject.Models;
 using OfficeBoilerProject.OfficeAppService.Dto;
+using OfficeBoilerProject.PersonAppService;
 using OfficeBoilerProject.UsageAppService;
+using OfficeBoilerProject.UsageAppService.Dto;
+using OfficeBoilerProject.Web.Dto;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,34 +20,38 @@ namespace OfficeBoilerProject.Web.Controllers
     public class DeviceController : OfficeBoilerProjectControllerBase
     {
         private readonly IDeviceAppService _deviceAppService;
+        private readonly IPersonAppService _personAppService;
         private readonly IUsageAppService _usageAppService;
 
-        public DeviceController(IDeviceAppService deviceAppService, IUsageAppService usageAppService)
+        public DeviceController(IDeviceAppService deviceAppService, IUsageAppService usageAppService, IPersonAppService personAppService)
         {
             _deviceAppService = deviceAppService;
             _usageAppService = usageAppService;
+            _personAppService = personAppService;
         }
 
         // GET: /<controller>/
         public IActionResult Index()
         {
             var allDevices = _deviceAppService.Get();
-            var model = new DeviceDtoGetAll(allDevices.Items);
+            var model = new DeviceDtoGetAll(allDevices);
             return View(model);
         }
 
         public IActionResult Device(int? id)
         {
-            Device output = null;
+            DeviceDto output = null;
             if (id.HasValue)
             {
-                output = _deviceAppService.GetDevice(id.Value);
+                output = _deviceAppService.GetById(id.Value);
             }
             return View(output);
         }
 
         public IActionResult Add()
         {
+            var persons = SelectPerson();
+            ViewData["SelectPerson"] = persons;
             return View();
         }
 
@@ -63,8 +71,10 @@ namespace OfficeBoilerProject.Web.Controllers
             DeviceDtoPut newDevice = new DeviceDtoPut
             {
                 Name = device.Name,
-                PersonId = (int) device.PersonId
+                PersonId = device.PersonId
             };
+            var persons = SelectPerson();
+            ViewData["SelectPerson"] = persons;
             return View(newDevice);
         }
 
@@ -93,6 +103,32 @@ namespace OfficeBoilerProject.Web.Controllers
         {
             _deviceAppService.Delete(id);
             return RedirectToAction("Index");
+        }
+
+        public SelectList SelectPerson()
+        {
+            var person = new PersonSelectListDto(_personAppService);
+
+            var persons = person.Persons.ToList();
+
+            var selectPerson = persons.Select(x => new
+            {
+                Id = x.Id,
+                Name = x.FirstName + " " + x.LastName
+            });
+
+            SelectList selectPersons = new SelectList(selectPerson, "Id", "Name");
+
+            return selectPersons;
+        }
+
+        public IActionResult History(int id)
+        {
+            var usage = _usageAppService.AllByDevice(id);
+            ViewData["UsageList"] = usage;
+            UsageByDeviceDtoGet list = new UsageByDeviceDtoGet();
+            list.Usages = ObjectMapper.Map<List<UsageDtoGet>>(usage);
+            return View(list);
         }
     }
 }

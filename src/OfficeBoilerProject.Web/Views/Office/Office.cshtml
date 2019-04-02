@@ -1,19 +1,21 @@
 ﻿
-@model OfficeBoilerProject.OfficeAppService.Dto.OfficeDto
+@model OfficeBoilerProject.OfficeAppService.Dto.OfficeDtoGet
 @{
     ViewBag.Title = "Office";
     ViewBag.ActiveMenu = "Office";
 }
 
 <h2>Office Details</h2>
-<hr/>
+<hr />
 
 <h2>Name: @Model.Description </h2>
 <br />
-<h2>Persons: </h2>
-<ul>
-    @foreach (var person in Model.Persons)
-    {
-    <li><h3>@person.FirstName @person.LastName</h3></li>
-    }
-</ul>
+
+@if (Model.Persons.Any())
+{
+    <h2>Persons: </h2>
+    foreach (var person in @Model.Persons)
+     {
+         <h4>@person.FirstName @person.LastName</h4>
+     }
+}

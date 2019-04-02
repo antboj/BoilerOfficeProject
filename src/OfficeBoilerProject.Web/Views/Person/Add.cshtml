@@ -1,6 +1,7 @@
 ﻿@model OfficeBoilerProject.PersonAppService.Dto.PersonDtoPost
 @{
     ViewData["Title"] = "Add";
+    var officeList = ViewBag.OfficeList as SelectList;
 }
 
 <h2>Add New Person</h2>
@@ -10,7 +11,7 @@
     <div class="form-group">
         <input type="text" name="FirstName" placeholder="FirstName" class="form-control" />
         <input type="text" name="LastName" placeholder="LastName" class="form-control" />
-        <input type="number" name="officeId" placeholder="OfficeId" class="form-control" />
+        @Html.DropDownListFor(x => x.OfficeId, officeList, "Select Office")
     </div>
     <button type="submit" class="btn btn-primary">@("Add")</button>
 </form>

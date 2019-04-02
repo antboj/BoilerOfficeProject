@@ -11,7 +11,7 @@ namespace OfficeBoilerProject.DeviceAppService
 {
     public interface IDeviceAppService : IApplicationService
     {
-        ListResultDto<DeviceDto> Get();
+        List<DeviceDto> Get();
         DeviceDto GetById(int id);
         int Insert(DeviceDtoPost input);
         void Update(int id, DeviceDtoPut input);

@@ -1,6 +1,7 @@
 ﻿@model OfficeBoilerProject.DeviceAppService.Dto.DeviceDtoPut
 @{
     ViewData["Title"] = "Update";
+    var persons = ViewBag.SelectPerson as SelectList;
 }
 
 <h2>Update Device</h2>
@@ -8,7 +9,7 @@
 <form method="post">
     <div class="form-group">
         Name: <input type="text" name="Name" value="@Model.Name" class="form-control" />
-        Person: <input type="number" name="PersonId" value="@Model.PersonId" class="form-control" />
+        @Html.DropDownListFor(x => x.PersonId, persons)
     </div>
     <button type="submit" class="btn btn-primary">@("Update")</button>
 </form>

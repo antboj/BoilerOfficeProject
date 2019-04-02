@@ -12,7 +12,7 @@ namespace OfficeBoilerProject.OfficeAppService.Dto
     public class OfficeDto : EntityDto
     {
         public string Description { get; set; }
-        public List<PersonDto> Persons { get; set; } = new List<PersonDto>();
+        //public List<PersonDto> Persons { get; set; } = new List<PersonDto>();
 
     }
 }

@@ -18,14 +18,14 @@ namespace OfficeBoilerProject.PersonAppService
             _personRepository = personRepository;
         }
 
-        public ListResultDto<PersonDto> Get()
+        public List<PersonDto> Get()
         {
             var person = _personRepository.GetAll();
             if (person == null)
             {
                 throw new Exception("Office Not Found");
             }
-            return new ListResultDto<PersonDto>(ObjectMapper.Map<List<PersonDto>>(person));
+            return new List<PersonDto>(ObjectMapper.Map<List<PersonDto>>(person));
         }
 
         public PersonDto GetById(int id)

@@ -11,7 +11,7 @@ namespace OfficeBoilerProject.Models
     {
         public string Name { get; set; }
 
-        public int? PersonId { get; set; }
+        public int PersonId { get; set; }
         [ForeignKey("PersonId")]
         public Person Person { get; set; }
 
