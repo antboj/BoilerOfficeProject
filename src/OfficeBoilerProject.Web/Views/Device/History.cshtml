@@ -5,8 +5,11 @@
 }
 
 <h2>History</h2>
-
+<hr/>
 @foreach (var u in Model.Usages)
 {
     <p>Name: @u.Person</p>
+    <p>Used From: @u.UsedFrom</p>
+    <p>Used To: @u.UsedTo</p>
+    <hr/>
 }
