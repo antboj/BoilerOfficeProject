@@ -22,6 +22,24 @@ namespace OfficeBoilerProject.Web.Startup
                 DbContextOptionsConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
             });
 
+
+            services.AddAuthentication(options =>
+                {
+                    options.DefaultScheme = "Cookies";
+                    options.DefaultChallengeScheme = "oidc";
+                })
+                .AddCookie("Cookies")
+                .AddOpenIdConnect("oidc", options =>
+                {
+                    // Identity Server Address
+                    options.Authority = "http://localhost:60087";
+                    options.RequireHttpsMetadata = false;
+                    options.ClientId = "officeBoilerProject";
+                    options.ClientSecret = "secret";
+                    options.SaveTokens = true;
+                });
+
+
             services.AddMvc(options =>
             {
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
@@ -50,9 +68,10 @@ namespace OfficeBoilerProject.Web.Startup
             {
                 app.UseExceptionHandler("/Error");
             }
-
             app.UseStaticFiles();
 
+            app.UseAuthentication();
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

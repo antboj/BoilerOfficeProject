@@ -27,6 +27,20 @@ namespace OfficeBoilerProject.Web.Startup
                         )
                 ).AddItem(
                     new MenuItemDefinition(
+                        "Login",
+                        L("Login"),
+                        url: "Home/Login",
+                        icon: "fa fa-info"
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        "Logout",
+                        L("Logout"),
+                        url: "Home/Logout",
+                        icon: "fa fa-info"
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
                         "Office",
                         L("Office"),
                         url: "Office",

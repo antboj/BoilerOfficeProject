@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using OfficeBoilerProject.DeviceAppService;
@@ -47,14 +48,14 @@ namespace OfficeBoilerProject.Web.Controllers
             }
             return View(output);
         }
-
+        [Authorize]
         public IActionResult Add()
         {
             var persons = SelectPerson();
             ViewData["SelectPerson"] = persons;
             return View();
         }
-
+        [Authorize]
         [HttpPost]
         public IActionResult Add(DeviceDtoPost input)
         {
