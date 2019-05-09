@@ -71,6 +71,7 @@ namespace OfficeBoilerProject.Web.Startup
             app.UseStaticFiles();
 
             app.UseAuthentication();
+
             
             app.UseMvc(routes =>
             {
