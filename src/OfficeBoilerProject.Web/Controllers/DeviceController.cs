@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Abp.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -66,6 +67,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public IActionResult Update(int id)
         {
             var device = _deviceAppService.GetDevice(id);
@@ -79,6 +81,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(newDevice);
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Update(int id, DeviceDtoPut input)
         {
@@ -89,6 +92,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        [AbpAuthorize("delApi")]
         public IActionResult Delete(int? id)
         {
             DeviceDto output = null;
@@ -99,6 +103,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(output);
         }
 
+        [AbpAuthorize("delApi")]
         [HttpPost]
         public IActionResult Delete(int id)
         {

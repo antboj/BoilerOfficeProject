@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OfficeBoilerProject.OfficeAppService;
 using OfficeBoilerProject.OfficeAppService.Dto;
@@ -37,11 +38,13 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(output);
         }
 
-       public IActionResult Add()
+        [Authorize]
+        public IActionResult Add()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Add(OfficeDto input)
         {
@@ -49,6 +52,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public IActionResult Delete(int? id)
         {
             OfficeDto output = null;
@@ -59,6 +63,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(output);
         }
 
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         public IActionResult Delete(int id)
         {
@@ -66,6 +71,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public IActionResult Update(int id)
         {
             var office = _officeAppService.GetOffice(id);
@@ -76,6 +82,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(newOffice);
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Update(int id, OfficeDtoPut input)
         {

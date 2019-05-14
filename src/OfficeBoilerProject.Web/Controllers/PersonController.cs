@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using OfficeBoilerProject.Models;
@@ -43,6 +44,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(output);
         }
 
+        [Authorize]
         public IActionResult Add()
         {
             var offices = SelectOffice();
@@ -50,6 +52,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Add(PersonDtoPost input)
         {
@@ -57,6 +60,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public IActionResult Delete(int? id)
         {
             PersonDto output = null;
@@ -67,6 +71,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(output);
         }
 
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
@@ -88,6 +93,7 @@ namespace OfficeBoilerProject.Web.Controllers
             return View(newPerson);
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Update(int id, PersonDtoPut input)
         {

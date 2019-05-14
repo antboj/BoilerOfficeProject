@@ -37,7 +37,8 @@ namespace OfficeBoilerProject.Web.Startup
                         "Logout",
                         L("Logout"),
                         url: "Home/Logout",
-                        icon: "fa fa-info"
+                        icon: "fa fa-info",
+                        requiresAuthentication:true
                     )
                 ).AddItem(
                     new MenuItemDefinition(
