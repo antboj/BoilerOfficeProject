@@ -8249,3 +8249,603 @@ INFO  2019-05-15 10:11:17,233 [11   ] ore.Mvc.Internal.ControllerActionInvoker -
 INFO  2019-05-15 10:11:17,234 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
 INFO  2019-05-15 10:11:17,234 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 123.7259ms
 INFO  2019-05-15 10:11:17,234 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 150.4721ms 200 application/x-javascript
+DEBUG 2019-05-15 21:08:02,100 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-05-15 21:08:02,240 [1    ] Abp.Modules.AbpModuleManager             - Found 10 ABP modules in total.
+DEBUG 2019-05-15 21:08:02,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OfficeBoilerProject.Web.Startup.OfficeBoilerProjectWebModule, OfficeBoilerProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,518 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OfficeBoilerProject.OfficeBoilerProjectApplicationModule, OfficeBoilerProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,518 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OfficeBoilerProject.OfficeBoilerProjectCoreModule, OfficeBoilerProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,519 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,520 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,520 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: OfficeBoilerProject.EntityFrameworkCore.OfficeBoilerProjectEntityFrameworkCoreModule, OfficeBoilerProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,521 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,521 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,522 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,522 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:02,537 [1    ] Abp.Modules.AbpModuleManager             - 10 modules loaded.
+DEBUG 2019-05-15 21:08:03,092 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: OfficeBoilerProject.EntityFrameworkCore.OfficeBoilerProjectDbContext, OfficeBoilerProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-05-15 21:08:03,460 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2019-05-15 21:08:03,565 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-05-15 21:08:03,774 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: OfficeBoilerProject
+DEBUG 2019-05-15 21:08:03,782 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-05-15 21:08:04,205 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-05-15 21:08:04,315 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-05-15 21:08:04,315 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.PersonAppService.Dto.PersonDto
+DEBUG 2019-05-15 21:08:04,331 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.PersonAppService.Dto.PersonDtoPost
+DEBUG 2019-05-15 21:08:04,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.PersonAppService.Dto.PersonDtoPut
+DEBUG 2019-05-15 21:08:04,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.OfficeAppService.Dto.OfficeDto
+DEBUG 2019-05-15 21:08:04,332 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.OfficeAppService.Dto.OfficeDtoGet
+DEBUG 2019-05-15 21:08:04,333 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.OfficeAppService.Dto.OfficeDtoPut
+DEBUG 2019-05-15 21:08:04,333 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.DeviceAppService.DeviceDto
+DEBUG 2019-05-15 21:08:04,333 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.DeviceAppService.Dto.DeviceDtoGetAll
+DEBUG 2019-05-15 21:08:04,333 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.DeviceAppService.Dto.DeviceDtoPost
+DEBUG 2019-05-15 21:08:04,333 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - OfficeBoilerProject.DeviceAppService.Dto.DeviceDtoPut
+INFO  2019-05-15 21:08:07,378 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/  
+INFO  2019-05-15 21:08:09,411 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:08:09,623 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:08:09,632 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.8027ms.
+INFO  2019-05-15 21:08:09,658 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Index is executed by an anonymous user in 71 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:08:09,766 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:08:10,446 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,447 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,448 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,448 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,448 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,448 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,448 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,448 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,449 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:10,449 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:08:10,982 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1290.6167ms.
+INFO  2019-05-15 21:08:10,992 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) in 1573.0629ms
+INFO  2019-05-15 21:08:11,026 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/toastr/toastr.css  
+INFO  2019-05-15 21:08:11,037 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3662.8861ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:08:11,043 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css  
+INFO  2019-05-15 21:08:11,049 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/font-awesome/css/font-awesome.css  
+INFO  2019-05-15 21:08:11,058 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/sweetalert/dist/sweetalert.css  
+INFO  2019-05-15 21:08:11,061 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/css/main.css  
+INFO  2019-05-15 21:08:11,061 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/bootstrap-paper/bootstrap.css  
+INFO  2019-05-15 21:08:11,132 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/main.css'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\css\main.css'
+INFO  2019-05-15 21:08:11,132 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\toastr\toastr.css'
+INFO  2019-05-15 21:08:11,142 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.css'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\sweetalert\dist\sweetalert.css'
+INFO  2019-05-15 21:08:11,145 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2019-05-15 21:08:11,146 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2019-05-15 21:08:11,148 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 99.0408ms 200 text/css
+INFO  2019-05-15 21:08:11,148 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.3985ms 200 text/css
+INFO  2019-05-15 21:08:11,148 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 104.9787ms 200 text/css
+INFO  2019-05-15 21:08:11,148 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.8576ms 200 text/css
+INFO  2019-05-15 21:08:11,148 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 121.4868ms 200 text/css
+INFO  2019-05-15 21:08:11,148 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/json2/json2.js  
+INFO  2019-05-15 21:08:11,148 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/jquery/dist/jquery.js  
+INFO  2019-05-15 21:08:11,151 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/bootstrap/dist/js/bootstrap.js  
+INFO  2019-05-15 21:08:11,152 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/moment/min/moment-with-locales.js  
+INFO  2019-05-15 21:08:11,158 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\json2\json2.js'
+INFO  2019-05-15 21:08:11,158 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/jquery-validation/dist/jquery.validate.js  
+INFO  2019-05-15 21:08:11,158 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.9735ms 200 application/javascript
+INFO  2019-05-15 21:08:11,164 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/blockUI/jquery.blockUI.js  
+INFO  2019-05-15 21:08:11,171 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-paper/bootstrap.css'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\bootstrap-paper\bootstrap.css'
+INFO  2019-05-15 21:08:11,172 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 110.6692ms 200 text/css
+INFO  2019-05-15 21:08:11,177 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/toastr/toastr.js  
+INFO  2019-05-15 21:08:11,184 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2019-05-15 21:08:11,186 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.429ms 200 application/javascript
+INFO  2019-05-15 21:08:11,186 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2019-05-15 21:08:11,187 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 38.6903ms 200 application/javascript
+INFO  2019-05-15 21:08:11,190 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/sweetalert/dist/sweetalert-dev.js  
+INFO  2019-05-15 21:08:11,190 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2019-05-15 21:08:11,190 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2019-05-15 21:08:11,190 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.3079ms 200 application/javascript
+INFO  2019-05-15 21:08:11,190 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.3597ms 200 application/javascript
+INFO  2019-05-15 21:08:11,192 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\toastr\toastr.js'
+INFO  2019-05-15 21:08:11,192 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.2945ms 200 application/javascript
+INFO  2019-05-15 21:08:11,193 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/spin.js/spin.js  
+INFO  2019-05-15 21:08:11,195 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2019-05-15 21:08:11,195 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.6106ms 200 application/javascript
+INFO  2019-05-15 21:08:11,199 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\spin.js\spin.js'
+INFO  2019-05-15 21:08:11,199 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.3402ms 200 application/javascript
+INFO  2019-05-15 21:08:11,200 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/spin.js/jquery.spin.js  
+INFO  2019-05-15 21:08:11,200 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js  
+INFO  2019-05-15 21:08:11,201 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js  
+INFO  2019-05-15 21:08:11,201 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/abp-web-resources/Abp/Framework/scripts/abp.js  
+INFO  2019-05-15 21:08:11,205 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2019-05-15 21:08:11,205 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2019-05-15 21:08:11,205 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.3151ms 200 application/javascript
+INFO  2019-05-15 21:08:11,206 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.0059ms 200 application/javascript
+INFO  2019-05-15 21:08:11,208 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2019-05-15 21:08:11,209 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.2372ms 200 application/javascript
+INFO  2019-05-15 21:08:11,211 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2019-05-15 21:08:11,211 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.5568ms 200 application/javascript
+INFO  2019-05-15 21:08:11,213 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert-dev.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\sweetalert\dist\sweetalert-dev.js'
+INFO  2019-05-15 21:08:11,213 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 23.5592ms 200 application/javascript
+INFO  2019-05-15 21:08:11,217 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js  
+INFO  2019-05-15 21:08:11,217 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js  
+INFO  2019-05-15 21:08:11,218 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js  
+INFO  2019-05-15 21:08:11,219 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935512907618699  
+INFO  2019-05-15 21:08:11,220 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2019-05-15 21:08:11,220 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.8047ms 200 application/javascript
+INFO  2019-05-15 21:08:11,221 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935512907643678  
+INFO  2019-05-15 21:08:11,225 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2019-05-15 21:08:11,225 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2019-05-15 21:08:11,226 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.225ms 200 application/javascript
+INFO  2019-05-15 21:08:11,226 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.712ms 200 application/javascript
+INFO  2019-05-15 21:08:11,227 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/js/views/home/index.js  
+INFO  2019-05-15 21:08:11,231 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/views/home/index.js'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\js\views\home\index.js'
+INFO  2019-05-15 21:08:11,231 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.045ms 200 application/javascript
+INFO  2019-05-15 21:08:11,289 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:08:11,296 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:08:11,372 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-05-15 21:08:11,379 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-05-15 21:08:11,382 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2019-05-15 21:08:11,383 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.5321ms 200 image/png
+INFO  2019-05-15 21:08:11,443 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-05-15 21:08:11,444 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3  
+INFO  2019-05-15 21:08:11,447 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\PC\source\repos\BoilerOfficeProject\src\OfficeBoilerProject.Web\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2019-05-15 21:08:11,447 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.8752ms 200 font/woff2
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,556 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,557 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:11,557 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:08:11,613 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 233.7853ms.
+INFO  2019-05-15 21:08:11,621 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:08:11,622 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 333.0142ms
+INFO  2019-05-15 21:08:11,622 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 400.4446ms 200 application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:08:11,656 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 212.7859ms.
+INFO  2019-05-15 21:08:11,657 [8    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-05-15 21:08:11,657 [8    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 360.6926ms
+INFO  2019-05-15 21:08:11,657 [8    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 438.0716ms 200 application/x-javascript
+INFO  2019-05-15 21:08:11,678 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/favicon.ico  
+INFO  2019-05-15 21:08:11,683 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.9834ms 404 
+INFO  2019-05-15 21:08:35,014 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Home/Login  
+INFO  2019-05-15 21:08:35,021 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:08:35,023 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:08:35,026 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ChallengeResult in 3.1213ms.
+INFO  2019-05-15 21:08:35,027 [13   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Login is executed by an anonymous user in 4 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:08:35,036 [13   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes (oidc).
+INFO  2019-05-15 21:08:37,422 [3    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) in 2400.2699ms
+ERROR 2019-05-15 21:08:37,435 [3    ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden]'. ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII is hidden]'. ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Protocols\Configuration\HttpDocumentRetriever.cs:line 89
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Protocols\Configuration\HttpDocumentRetriever.cs:line 96
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Protocols.OpenIdConnect\Configuration\OpenIdConnectConfigurationRetriever.cs:line 89
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Protocols\Configuration\ConfigurationManager.cs:line 202
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  2019-05-15 21:08:37,883 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2869.8462ms 500 text/html; charset=utf-8
+INFO  2019-05-15 21:08:43,695 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/  
+INFO  2019-05-15 21:08:43,698 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:08:43,699 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:08:43,700 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0316ms.
+INFO  2019-05-15 21:08:43,700 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Index is executed by an anonymous user in 1 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:08:43,705 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:08:43,732 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,732 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,732 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,732 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,733 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,733 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,733 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,733 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,733 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,733 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:08:43,737 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 36.492ms.
+INFO  2019-05-15 21:08:43,737 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) in 38.2036ms
+INFO  2019-05-15 21:08:43,737 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.3566ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:08:43,820 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935513237365321  
+INFO  2019-05-15 21:08:43,821 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935513237366483  
+INFO  2019-05-15 21:08:43,824 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:08:43,824 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:08:43,825 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-05-15 21:08:43,829 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-05-15 21:08:43,836 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,836 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,836 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,836 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,836 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,837 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,837 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,837 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,837 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:43,838 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:08:43,839 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 10.2771ms.
+INFO  2019-05-15 21:08:43,840 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-05-15 21:08:43,840 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 15.6939ms
+INFO  2019-05-15 21:08:43,840 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.1543ms 200 application/x-javascript
+INFO  2019-05-15 21:08:43,846 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 20.5713ms.
+INFO  2019-05-15 21:08:43,846 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:08:43,847 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 22.6696ms
+INFO  2019-05-15 21:08:43,847 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.3755ms 200 application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:08:45,578 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Home/Login  
+INFO  2019-05-15 21:08:45,580 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:08:45,581 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:08:45,581 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ChallengeResult in 0.0182ms.
+INFO  2019-05-15 21:08:45,582 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Login is executed by an anonymous user in 1 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:08:45,582 [12   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes (oidc).
+INFO  2019-05-15 21:08:45,590 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) in 10.257ms
+ERROR 2019-05-15 21:08:45,596 [12   ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden]'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Protocols\Configuration\ConfigurationManager.cs:line 211
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  2019-05-15 21:08:45,649 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 71.306ms 500 text/html; charset=utf-8
+INFO  2019-05-15 21:08:47,375 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/  
+INFO  2019-05-15 21:08:47,377 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:08:47,378 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:08:47,378 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0114ms.
+INFO  2019-05-15 21:08:47,378 [12   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Index is executed by an anonymous user in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:08:47,378 [12   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:08:47,380 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,380 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,380 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,381 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,381 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,381 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,381 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,381 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,381 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,381 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:08:47,383 [12   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 4.9009ms.
+INFO  2019-05-15 21:08:47,383 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) in 5.9988ms
+INFO  2019-05-15 21:08:47,383 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.3513ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:08:47,459 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935513273829916  
+INFO  2019-05-15 21:08:47,459 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935513273830177  
+INFO  2019-05-15 21:08:47,461 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:08:47,461 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:08:47,462 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-05-15 21:08:47,462 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-05-15 21:08:47,470 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,470 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,470 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,470 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,470 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,470 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,471 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,471 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,471 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:08:47,471 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:08:47,472 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 9.6952ms.
+INFO  2019-05-15 21:08:47,472 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-05-15 21:08:47,473 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 12.1718ms
+INFO  2019-05-15 21:08:47,473 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.2372ms 200 application/x-javascript
+INFO  2019-05-15 21:08:47,475 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 13.1768ms.
+INFO  2019-05-15 21:08:47,475 [18   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:08:47,475 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 14.7511ms
+INFO  2019-05-15 21:08:47,476 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.4157ms 200 application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:00,715 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Home/Login  
+INFO  2019-05-15 21:09:00,718 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:00,720 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:00,720 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ChallengeResult in 0.006ms.
+INFO  2019-05-15 21:09:00,720 [18   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Login is executed by an anonymous user in 1 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:00,720 [18   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes (oidc).
+INFO  2019-05-15 21:09:00,725 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) in 7.488ms
+ERROR 2019-05-15 21:09:00,729 [18   ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII is hidden]'.
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel) in C:\agent2\_work\56\s\src\Microsoft.IdentityModel.Protocols\Configuration\ConfigurationManager.cs:line 211
+   at Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  2019-05-15 21:09:00,770 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.7533ms 500 text/html; charset=utf-8
+INFO  2019-05-15 21:09:04,264 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/  
+INFO  2019-05-15 21:09:04,266 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:04,267 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:04,267 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0128ms.
+INFO  2019-05-15 21:09:04,267 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Index is executed by an anonymous user in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:04,267 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:09:04,269 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,269 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,269 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,269 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,269 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,270 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,270 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,270 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,270 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,270 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:04,272 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 4.5125ms.
+INFO  2019-05-15 21:09:04,272 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) in 6.0541ms
+INFO  2019-05-15 21:09:04,272 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.6139ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:09:04,323 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935513442719821  
+INFO  2019-05-15 21:09:04,324 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935513442719540  
+INFO  2019-05-15 21:09:04,326 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:09:04,326 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:09:04,328 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-05-15 21:09:04,328 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-05-15 21:09:04,336 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,336 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,339 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,339 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,339 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:04,339 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 11.2554ms.
+WARN  2019-05-15 21:09:04,339 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,339 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:04,340 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-05-15 21:09:04,340 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 13.8414ms
+INFO  2019-05-15 21:09:04,340 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.2107ms 200 application/x-javascript
+WARN  2019-05-15 21:09:04,345 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,358 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:04,358 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:04,362 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 34.4469ms.
+INFO  2019-05-15 21:09:04,362 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:04,363 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 36.7272ms
+INFO  2019-05-15 21:09:04,363 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.8537ms 200 application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:08,237 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Home/Login  
+INFO  2019-05-15 21:09:08,240 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:08,242 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:08,242 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ChallengeResult in 0.0102ms.
+INFO  2019-05-15 21:09:08,242 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Login is executed by an anonymous user in 1 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:08,242 [7    ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes (oidc).
+INFO  2019-05-15 21:09:09,470 [16   ] ation.OpenIdConnect.OpenIdConnectHandler - AuthenticationScheme: oidc was challenged.
+INFO  2019-05-15 21:09:09,470 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Login (OfficeBoilerProject.Web) in 1230.0017ms
+INFO  2019-05-15 21:09:09,471 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1233.4914ms 302 
+INFO  2019-05-15 21:09:18,385 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://127.0.0.1:5000/signin-oidc application/x-www-form-urlencoded 1485
+INFO  2019-05-15 21:09:18,970 [12   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+INFO  2019-05-15 21:09:18,970 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 585.4764ms 302 
+INFO  2019-05-15 21:09:18,978 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Home/Index  
+INFO  2019-05-15 21:09:19,006 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:19,008 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:19,008 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0145ms.
+INFO  2019-05-15 21:09:19,008 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Index is executed by user 2 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:19,008 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:09:19,019 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,019 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Logout' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,019 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,020 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:19,022 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 13.355ms.
+INFO  2019-05-15 21:09:19,022 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) in 15.5169ms
+INFO  2019-05-15 21:09:19,022 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.3336ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:09:19,207 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935513590217513  
+INFO  2019-05-15 21:09:19,208 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935513590218069  
+INFO  2019-05-15 21:09:19,209 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:09:19,210 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:09:19,211 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-05-15 21:09:19,212 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-05-15 21:09:19,221 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 9.9887ms.
+WARN  2019-05-15 21:09:19,221 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,221 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Logout' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,221 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:19,221 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:19,222 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 12.3932ms
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:19,222 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.6562ms 200 application/x-javascript
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,222 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:19,272 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+INFO  2019-05-15 21:09:19,274 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 62.7977ms.
+INFO  2019-05-15 21:09:19,275 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:19,275 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 64.325ms
+INFO  2019-05-15 21:09:19,275 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.5609ms 200 application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:23,483 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Device  
+INFO  2019-05-15 21:09:23,487 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Device", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.DeviceController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:27,793 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.DeviceController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:32,486 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.DeviceAppService.DeviceAppService.Get is executed by user 2 in 4673 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:32,492 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.DeviceController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4699.1498ms.
+INFO  2019-05-15 21:09:32,629 [6    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.DeviceController.Index is executed by user 2 in 4837 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:32,636 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Logout' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,681 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:32,688 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 56.7819ms.
+INFO  2019-05-15 21:09:32,688 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.DeviceController.Index (OfficeBoilerProject.Web) in 9201.2262ms
+INFO  2019-05-15 21:09:32,690 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9207.0935ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:09:32,720 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935513726841074  
+INFO  2019-05-15 21:09:32,720 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935513726841348  
+INFO  2019-05-15 21:09:32,768 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:09:32,769 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:09:32,770 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-05-15 21:09:32,771 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-05-15 21:09:32,779 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,779 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Logout' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,779 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,779 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,779 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,779 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,779 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,780 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,780 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,780 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:32,780 [21   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:32,784 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 13.5511ms.
+INFO  2019-05-15 21:09:32,784 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 12.5506ms.
+INFO  2019-05-15 21:09:32,784 [21   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:32,784 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-05-15 21:09:32,785 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 15.2284ms
+INFO  2019-05-15 21:09:32,785 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 16.0111ms
+INFO  2019-05-15 21:09:32,785 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64.9184ms 200 application/x-javascript
+INFO  2019-05-15 21:09:32,785 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64.7464ms 200 application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:35,336 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/  
+INFO  2019-05-15 21:09:35,339 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:35,340 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:35,342 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2586ms.
+INFO  2019-05-15 21:09:35,343 [24   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Index is executed by user 2 in 2 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:35,343 [24   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:09:35,347 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,347 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Logout' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,347 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,348 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,348 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,348 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,348 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,348 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,348 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,349 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,349 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:35,351 [24   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 8.1615ms.
+INFO  2019-05-15 21:09:35,352 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) in 12.6161ms
+INFO  2019-05-15 21:09:35,352 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.136ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:09:35,447 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935513753514326  
+INFO  2019-05-15 21:09:35,448 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935513753514832  
+INFO  2019-05-15 21:09:35,459 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:09:35,459 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:09:35,461 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-05-15 21:09:35,461 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-05-15 21:09:35,470 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,470 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Logout' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,471 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,471 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,471 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,472 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,472 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,472 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,473 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,473 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:35,473 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:35,477 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 15.805ms.
+INFO  2019-05-15 21:09:35,478 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-05-15 21:09:35,478 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 18.6858ms
+INFO  2019-05-15 21:09:35,478 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.9752ms 200 application/x-javascript
+INFO  2019-05-15 21:09:35,481 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 19.5134ms.
+INFO  2019-05-15 21:09:35,481 [24   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:35,482 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 22.6388ms
+INFO  2019-05-15 21:09:35,482 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.8098ms 200 application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:37,072 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Home/Logout  
+INFO  2019-05-15 21:09:37,081 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Logout", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Logout (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:37,082 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Logout (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:37,085 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Logout (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.SignOutResult in 2.6049ms.
+INFO  2019-05-15 21:09:37,086 [21   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Logout is executed by user 2 in 3 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:37,100 [21   ] Microsoft.AspNetCore.Mvc.SignOutResult   - Executing SignOutResult with authentication schemes (oidc, Cookies).
+INFO  2019-05-15 21:09:37,166 [21   ] ation.OpenIdConnect.OpenIdConnectHandler - AuthenticationScheme: oidc signed out.
+INFO  2019-05-15 21:09:37,237 [21   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed out.
+INFO  2019-05-15 21:09:37,237 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Logout (OfficeBoilerProject.Web) in 156.5452ms
+INFO  2019-05-15 21:09:37,238 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 165.6481ms 302 
+INFO  2019-05-15 21:09:38,156 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/signout-oidc?sid=590b42f4da9ae9fb94aab136f56a956a&iss=http%3A%2F%2Flocalhost%3A60087  
+INFO  2019-05-15 21:09:38,177 [23   ] ation.OpenIdConnect.OpenIdConnectHandler - Remote signout request processed.
+INFO  2019-05-15 21:09:38,178 [23   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed out.
+INFO  2019-05-15 21:09:38,178 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.0487ms 200 
+INFO  2019-05-15 21:09:38,351 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/signout-callback-oidc?state=CfDJ8ItUHdMMzjtGghZcnFoXp5sFHJ8VNpOToW2J8D7odJaNxtbgFB8qWmRTZm-wo3ugN-yA8ZhIJDAX3MUwcOjXMo3UVHHau1YdI7s-zfKM7LKW0GGaT2nVostSfYUJ7ecqZKoAwyw_rnyhlsirGhb8tkE  
+INFO  2019-05-15 21:09:38,360 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.339ms 302 
+INFO  2019-05-15 21:09:38,365 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/Home/Index  
+INFO  2019-05-15 21:09:38,366 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web)
+INFO  2019-05-15 21:09:38,366 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) - Validation state: Valid
+INFO  2019-05-15 21:09:38,367 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0155ms.
+INFO  2019-05-15 21:09:38,367 [24   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: OfficeBoilerProject.Web.Controllers.HomeController.Index is executed by an anonymous user in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2019-05-15 21:09:38,367 [24   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,369 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:38,371 [24   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 3.9538ms.
+INFO  2019-05-15 21:09:38,371 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action OfficeBoilerProject.Web.Controllers.HomeController.Index (OfficeBoilerProject.Web) in 4.9479ms
+INFO  2019-05-15 21:09:38,371 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.4247ms 200 text/html; charset=utf-8
+INFO  2019-05-15 21:09:38,474 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpServiceProxies/GetAll?v=636935513783709967  
+INFO  2019-05-15 21:09:38,474 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://127.0.0.1:5000/AbpScripts/GetScripts?v=636935513783710510  
+INFO  2019-05-15 21:09:38,477 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-05-15 21:09:38,478 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-05-15 21:09:38,478 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-05-15 21:09:38,480 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Login' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Office' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Offices' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Person' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Persons' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Add New Device' in localization source 'OfficeBoilerProject'!
+WARN  2019-05-15 21:09:38,487 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'All Devices' in localization source 'OfficeBoilerProject'!
+INFO  2019-05-15 21:09:38,488 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 9.5077ms.
+INFO  2019-05-15 21:09:38,488 [21   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-05-15 21:09:38,488 [21   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 11.0866ms
+INFO  2019-05-15 21:09:38,488 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.8875ms 200 application/x-javascript
+INFO  2019-05-15 21:09:38,490 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 10.2923ms.
+INFO  2019-05-15 21:09:38,491 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-05-15 21:09:38,491 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 12.6327ms
+INFO  2019-05-15 21:09:38,491 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.513ms 200 application/x-javascript; charset=utf-8
