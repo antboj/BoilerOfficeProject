@@ -35,8 +35,10 @@ namespace OfficeBoilerProject.Web.Startup
                     options.Authority = "http://localhost:60087";
                     options.RequireHttpsMetadata = false;
                     options.ClientId = "officeBoilerProject";
-                    //options.ClientSecret = "secret";
                     options.SaveTokens = true;
+                    options.Scope.Add("abptenantid");
+                    //options.ResponseType = "id_token"
+                    ;
                 });
 
 
