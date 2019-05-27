@@ -37,14 +37,15 @@ namespace OfficeBoilerProject.Web.Startup
                     options.ClientId = "officeBoilerProject";
                     options.SaveTokens = true;
                     options.Scope.Add("abptenantid");
-                    //options.ResponseType = "id_token"
                     ;
                 });
 
+            services.AddHttpContextAccessor();
 
             services.AddMvc(options =>
             {
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+                
             });
 
             //Configure Abp and Dependency Injection

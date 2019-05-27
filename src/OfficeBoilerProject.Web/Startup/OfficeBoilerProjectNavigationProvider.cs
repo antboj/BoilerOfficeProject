@@ -91,7 +91,17 @@ namespace OfficeBoilerProject.Web.Startup
                             L("All Devices"),
                             url: "Device",
                             icon: "fa fa-tasks"))
-                    );
+
+                    )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "GetApi",
+                        L("GetApi"),
+                        url: "Home/Get",
+                        icon: "fa fa-info",
+                        requiresAuthentication: true
+                    )
+                );
         }
 
         private static ILocalizableString L(string name)

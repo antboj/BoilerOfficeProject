@@ -1,20 +1,34 @@
-﻿@using OfficeBoilerProject.Web.Startup
-@{
-    ViewBag.ActiveMenu = PageNames.About;
-}
+﻿@using Microsoft.AspNetCore.Authentication
 
-<h2>@L("About")!</h2>
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
 
 @if (User.Identity.IsAuthenticated)
 {
-    <p>ok</p>
-    foreach (var claim in User.Claims)
-    {
-        var claimValue = claim.Value;
-        <p>@claim.Type: @claimValue</p>
-    }
+    <h3>Claims</h3>
+
+    <dl>
+        @foreach (var claim in User.Claims)
+        {
+            <dt>@claim.Type</dt>
+            <dd>@claim.Value</dd>
+        }
+    </dl>
+
+    <h3>Properties</h3>
+
+    <dl>
+        @foreach (var prop in (await Context.AuthenticateAsync()).Properties.Items)
+        {
+            <dt>@prop.Key</dt>
+            <dd>@prop.Value</dd>
+        }
+    </dl>
 }
 else
 {
-    <p>rip</p>
+    <h3>No User Authenticated</h3>
 }
