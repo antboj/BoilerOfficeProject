@@ -1,5 +1,6 @@
 using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Abp.Authorization;
 using Microsoft.AspNetCore.Authentication;
@@ -37,10 +38,11 @@ namespace OfficeBoilerProject.Web.Controllers
 
         public async Task<IActionResult> Get()
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, "http://localhost:21021/api/services/app/Device/GetDevices");
-            var token = HttpContext.GetTokenAsync("id_token").Result;
+            var request = new HttpRequestMessage(HttpMethod.Get, "http://localhost:21021/api/services/app/DeviceType/GetDeviceTypes");
+            var token = HttpContext.GetTokenAsync("access_token").Result;
             var client = new HttpClient();
-            request.Headers.Add("Authorization", token);
+            //request.Headers.Add("Authorization", token);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await client.SendAsync(request);
             var content = await response.Content.ReadAsStringAsync();
             object jsoned;

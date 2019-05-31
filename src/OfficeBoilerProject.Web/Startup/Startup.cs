@@ -1,9 +1,12 @@
 ﻿using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Threading.Tasks;
 using Abp.AspNetCore;
 using Abp.Castle.Logging.Log4Net;
 using Abp.EntityFrameworkCore;
 using OfficeBoilerProject.EntityFrameworkCore;
 using Castle.Facilities.Logging;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +25,7 @@ namespace OfficeBoilerProject.Web.Startup
                 DbContextOptionsConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
             });
 
+            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
             services.AddAuthentication(options =>
                 {
@@ -37,7 +41,11 @@ namespace OfficeBoilerProject.Web.Startup
                     options.ClientId = "officeBoilerProject";
                     options.SaveTokens = true;
                     options.Scope.Add("abptenantid");
-                    ;
+                    options.ResponseType = "id_token token";
+                    options.Scope.Add("deviceApi");
+                    options.GetClaimsFromUserInfoEndpoint = true;
+                    options.Events.OnTokenValidated += OnTokenValidated;
+                    options.Events.OnAuthenticationFailed += OnAuthenticationFailed;
                 });
 
             services.AddHttpContextAccessor();
@@ -56,6 +64,16 @@ namespace OfficeBoilerProject.Web.Startup
                     f => f.UseAbpLog4Net().WithConfig("log4net.config")
                 );
             });
+        }
+
+        private Task OnAuthenticationFailed(AuthenticationFailedContext arg)
+        {
+            return Task.CompletedTask;
+        }
+
+        private Task OnTokenValidated(TokenValidatedContext arg)
+        {
+            return Task.CompletedTask;
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
