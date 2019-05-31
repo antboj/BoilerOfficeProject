@@ -24,7 +24,7 @@ namespace OfficeBoilerProject.Web.Startup
             {
                 DbContextOptionsConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
             });
-
+            //Refresh browser, don't load page
             //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
             services.AddAuthentication(options =>
