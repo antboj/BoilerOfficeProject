@@ -11,13 +11,6 @@ namespace OfficeBoilerProject.Web.Controllers
 {
     public class HomeController : OfficeBoilerProjectControllerBase
     {
-        //private readonly HttpClient _client;
-
-        //public HomeController(HttpClient client)
-        //{
-        //    _client = client;
-        //}
-
         public ActionResult Index()
         {
             return View();
@@ -45,13 +38,7 @@ namespace OfficeBoilerProject.Web.Controllers
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await client.SendAsync(request);
             var content = await response.Content.ReadAsStringAsync();
-            object jsoned;
-            if (!response.IsSuccessStatusCode)
-            {
-                jsoned = JsonConvert.DeserializeObject(content);
-                return View(jsoned);
-            }
-            jsoned = JsonConvert.DeserializeObject(content);
+            var jsoned = JsonConvert.DeserializeObject(content);
             return View(jsoned);
         }
 
